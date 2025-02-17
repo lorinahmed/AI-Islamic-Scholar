@@ -6,8 +6,8 @@ An AI-powered assistant that uses the Quran to reason about Islamic questions us
 - RAG-based retrieval of relevant Quranic verses
 - Context-aware verse analysis
 - Analogical reasoning using Islamic principles
-- Confidence scoring based on relevance
-- Versioned FAISS index for efficient retrieval
+- Efficient vector search using FAISS
+- Contextual verse understanding
 
 ## Setup
 1. Clone the repository
