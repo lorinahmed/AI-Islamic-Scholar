@@ -22,7 +22,7 @@ def main():
             if question.lower() in ['quit', 'exit', 'q']:
                 print("\nThank you for using the Islamic AI Assistant. Goodbye!")
                 break
-            
+                
             # Skip empty questions
             if not question:
                 print("Please ask a question.")
@@ -34,7 +34,6 @@ def main():
             # Print the response in a formatted way
             print("\nRelevant Sources with Context:")
             for source in result.relevant_sources:
-                # Get the metadata for context
                 print(f"\nMain verse: {source.reference}")
                 print(f"Text: {source.text}")
                 print("\nSurrounding verses (Context):")
@@ -51,4 +50,4 @@ def main():
         logger.error(f"An error occurred: {str(e)}", exc_info=True)
 
 if __name__ == "__main__":
-    main()
+    main() 

@@ -2,6 +2,47 @@
 
 An AI-powered assistant that uses the Quran to reason about Islamic questions using RAG (Retrieval Augmented Generation) and analogical reasoning (Qiyas).
 
+## Project Structure
+```
+islamic-ai-assistant/
+├── api/                    # Backend API
+│   ├── src/               # Source code
+│   │   ├── reasoning/     # Core reasoning engine
+│   │   └── models/        # Data models
+│   ├── scripts/           # Utility scripts
+│   ├── data/              # Data files
+│   ├── requirements.txt   # Python dependencies
+│   └── main.py           # API entry point
+├── web/                   # Frontend application
+│   ├── src/              # React source code
+│   ├── public/           # Static files
+│   └── package.json      # Node dependencies
+└── README.md
+```
+
+## Backend Setup
+1. Navigate to the API directory:
+   ```bash
+   cd api
+   ```
+
+2. Follow the setup instructions in `api/README.md`
+
+## Frontend Setup
+1. Navigate to the web directory:
+   ```bash
+   cd web
+   ```
+
+2. Follow the setup instructions in `web/README.md`
+
+## Development
+- Backend API runs on http://localhost:5000
+- Frontend development server runs on http://localhost:3000
+
+## Contributing
+See CONTRIBUTING.md for guidelines.
+
 ## Features
 - RAG-based retrieval of relevant Quranic verses
 - Context-aware verse analysis
@@ -63,37 +104,8 @@ The project requires a `quran.json` file in the `data` directory. This file shou
 }
 ```
 
-## Project Structure
-
-```
-islamic-ai-assistant/
-├── data/
-│   ├── quran.json
-│   └── .gitkeep
-├── src/
-│   ├── models/
-│   │   └── data_models.py
-│   ├── reasoning/
-│   │   └── engine.py
-│   └── .env.example
-├── .gitignore
-├── README.md
-└── requirements.txt
-```
-
 ## License
 MIT License
-
-## Contributing
-Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
-
-Please make sure to update tests as appropriate.
 
 ## Note
 This project is for educational purposes and should not be used as a substitute for proper Islamic scholarship. Always consult with qualified Islamic scholars for religious guidance.
